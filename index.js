@@ -1,7 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
-const PORT=process.env.PORT || 3000;
+var PORT=process.env.PORT || 3000;
 const slugify = require('slugify');  //used to create a slug
 
 const replaceTemplate = require('./modules/replaceTemplate');
