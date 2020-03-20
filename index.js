@@ -1,7 +1,7 @@
 const fs = require('fs');
 const http = require('http');
 const url = require('url');
-
+const PORT=process.env.PORT || 3000;
 const slugify = require('slugify');  //used to create a slug
 
 const replaceTemplate = require('./modules/replaceTemplate');
@@ -95,6 +95,6 @@ const server = http.createServer((req, res) => {
     }
 
 });
-server.listen(8000, '127.0.0.1', () => {
-    console.log("listending to request on port 8000");
+server.listen(PORT, () => {
+    console.log("listending to request ");
 })
